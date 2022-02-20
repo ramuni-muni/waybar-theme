@@ -1,0 +1,45 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 24,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "mode": "overlay",
+    "exclusive": true,
+	"ipc": true,
+
+
+    "modules-left":[ "custom/launcher" ],
+    "modules-center": [ "wlr/taskbar" ],
+    "modules-right":[ "tray", "custom/jam" ],
+
+
+    "custom/jam": {
+    	"format": "{} WIB ",
+    	"rotate": 0,
+    	"exec": "/root/.config/waybar/clock.sh",
+    	"restart-interval": 30,
+	},
+	
+     "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Tango",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-right": "close"
+    },
+    
+    "tray": {
+        "icon-size": 20,
+        "spacing": 1
+    },
+
+    "custom/launcher":{
+        "format": "",
+        "on-click": "rofi -show drun",
+        "on-click-right": "pkill -f rofi"
+    }
+}
+

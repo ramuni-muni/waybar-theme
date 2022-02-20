@@ -1,0 +1,114 @@
+* {
+    border: none;
+    border-radius: 0px;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 24px;
+    color: #ffffff;
+}
+
+window#waybar {
+	background: rgba(17, 17, 17, 0.60);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    background: #1f1f1f;
+    color: #ffffff;
+    border-radius: 2px 2px 2px 2px;
+
+}
+
+#workspaces button:hover {
+    background: lightblue;
+    color: black;
+    border-bottom: 0px solid #ffffff;
+
+}
+
+#workspaces button.focused {
+    background: #1f1f1f;
+}
+
+#workspaces button.focused:hover {
+    background: lightblue;
+    color: black;
+    border-bottom: 0px solid #ffffff;
+
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 0px solid #ffffff;
+}
+
+#window,
+#workspaces {
+    margin: 0px 0px;
+}
+
+
+.modules-left {
+    background-color: #171717;
+    border-radius: 0px 20px 20px 0px;
+    padding: 0px 10px 0px 0px;
+}
+
+.modules-center {
+    border-radius: 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.modules-right {
+   background-color: #171717;
+   border-radius: 20px 0px 0px 20px;
+   padding: 0px 0px 0px 10px;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#custom-launcher{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #999999;
+    padding: 0px 30px 0px 30px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#taskbar{
+    margin: -10px 0px -10px 0px;
+}
+
+#tray {
+    color: #ffffff;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #171717;
+    color: #ffffff;
+}
