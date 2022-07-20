@@ -18,7 +18,7 @@
     "custom/jam": {
     	"format": "{} WIB ",
     	"rotate": 0,
-    	"exec": "~/.config/waybar/clock.sh",
+    	"exec": "bash ~/.config/waybar/clock.sh",
     	"restart-interval": 30,
 	},
 	
