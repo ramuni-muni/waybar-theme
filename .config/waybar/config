@@ -37,7 +37,7 @@
     },
 
     "custom/launcher":{
-        "format": "",
+        "format": "🕷 Menu",
         "on-click": "rofi -show drun",
         "on-click-right": "pkill -f rofi"
     }
