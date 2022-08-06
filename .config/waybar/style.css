@@ -88,9 +88,18 @@ label:focus {
     padding: 0px 10px 0px 10px;
 	border-radius: 3px 3px 3px 3px;
 }
+#custom-launcher button:hover{
+	color: black;
+}
 
 #taskbar{
     margin: -10px 0px -10px 0px;
+}
+#taskbar button{
+	color: white;
+}
+#taskbar button:hover{
+	color: black;
 }
 
 #tray {
