@@ -5,10 +5,7 @@
     "spacing": 0,
     "margin-top": 0,
     "margin-bottom": 0,
-    "mode": "overlay",
-    "exclusive": true,
-	"ipc": true,
-
+    "mode": "dock",
 
     "modules-left":[ "custom/launcher" ],
     "modules-center": [ "wlr/taskbar" ],
@@ -23,7 +20,7 @@
 	},
 	
      "wlr/taskbar": {
-        "format": "{icon}",
+        "format": "{icon} {app_id}",
         "icon-size": 20,
         "icon-theme": "Tango",
         "tooltip-format": "{title}",
