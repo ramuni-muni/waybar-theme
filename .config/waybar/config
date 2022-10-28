@@ -9,11 +9,11 @@
 
     "modules-left":[ "custom/launcher" ],
     "modules-center": [ "wlr/taskbar" ],
-    "modules-right":[ "tray", "custom/jam" ],
+    "modules-right":[ "tray", "custom/jam", "custom/exit" ],
 
 
     "custom/jam": {
-    	"format": "{} WIB ",
+    	"format": " {} WIB",
     	"rotate": 0,
     	"exec": "bash ~/.config/waybar/clock.sh",
     	"restart-interval": 30,
@@ -34,9 +34,14 @@
     },
 
     "custom/launcher":{
-        "format": "🕷 Menu",
+        "format": " Menu",
         "on-click": "rofi -show drun",
         "on-click-right": "pkill -f rofi"
+    },
+
+	"custom/exit":{
+        "format": " ⏻ ",
+        "on-click": "swaymsg exit"
     }
 }
 
